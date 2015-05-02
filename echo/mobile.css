@@ -1,0 +1,315 @@
+/* Mobile CSS
+   Jatsby Framework v0.4
+   Released October 30, 2014 under the MIT License
+   Copyright 2014 Jatsby 
+*/
+
+/*================ Fonts ================*/
+/* Declare or import all fonts here		 */
+/*=======================================*/
+
+@charset "UTF-8";
+
+/* Lobster 400; normal */
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+/* Source Sans Pro 100-900; normal, italic */
+@import url("https://fonts.googleapis.com/css?family=Source Sans Pro");
+
+/* Aileron 100-900; normal, italic */
+@import url("fonts/aileron.css");
+
+/* Bebas Neue 100-900; normal, italic */
+@import url("fonts/bebasNeue.css");
+
+/* Lobster 400; normal */
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+/* Lato 100-900; normal, italic */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+/* Mohave 400, 600, 700; normal, italic */
+@import url("fonts/mohave.css");
+
+/* Montserrat 400, 700; normal */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/* Simplifica 400; normal */
+@import url("fonts/simplifica.css");
+
+
+
+/*=============== Reset =================*/
+/* Simple reset parameters				 */
+/* Also for custom global declarations	 */
+/* (ie, ".roboto" for 					 */
+/* font-family:Roboto;					 */
+/*=======================================*/
+
+*	{
+	padding:0;
+	margin:0 auto;
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust: 100%;
+	/* a */
+	text-decoration: none;
+	color:inherit;
+}
+
+html	{
+	background-color: #6ADDBE;
+}
+
+.echoBackground	{
+	background-color: #6ADDBE !important;
+	background-color: #6ADDBE !important;
+}
+
+.echoText	{
+	color: #6ADDBE !important;
+	color: #6ADDBE !important;
+}
+}
+
+#space	{
+	width:100%;
+}
+
+	.one	{
+		height:1em;
+	}
+	
+	.two	{
+		height:2em;
+	}
+	
+	.three	{
+		height:3em;
+	}
+
+
+/*========== Mobile Breakpoint ==========*/
+/* 300px- 599px							 */
+/* For small devices					 */
+/* iPhone, iPod Touch, Nexus 5			 */
+/*=======================================*/
+
+@media (min-width: 300px)	{
+	
+	#header	{
+		position:relative;
+		height:4em;
+		top:0;
+		width:100%;
+		z-index: 999;
+	}
+
+ 	#name	{
+		font-family: 'Lobster';
+		font-size: 3em;
+		text-align: center;
+		color:#5b5b5b;
+		color:#626262;
+	}
+	
+	#infoContainer	{
+
+	}
+
+	#info	{
+		font-family: 'Source Sans Pro';
+		font-weight: 400;		
+		padding-top: 0.5em;
+		padding-bottom: 0em;
+		width:90%;
+		color:#5b5b5b;
+		color:#626262;
+		font-size: 1em;
+		text-align: left;
+	}
+	
+	#echoContainer	{
+		position:-webkit-sticky;
+		position:-moz-sticky;
+		position:sticky;
+		top:0;
+		z-index: 9999;
+		height:2em;
+	}
+	
+	/* Sticky */
+	#echo	{
+		font-family: 'Lobster';
+		font-size: 1.5em;
+		margin-right: 0.5em;
+		line-height: 1.25em;
+		color:#6ADDBE;
+		text-align: right;
+	}
+	
+	#allDownloadsContainer	{
+		background-color: #f9f9f9;
+		z-index: 2;
+	}
+	
+	.allDownloadsStickyHeader	{
+		position: -webkit-sticky;
+		position:-moz-sticky;
+		position: sticky;
+		top:0;
+		height:2em;
+		background-color: rgba(97, 97, 97, 0.98);
+		z-index: 999;
+	}
+	
+	#contentContainer	{
+		width:100%;
+		background-color: #f9f9f9;
+	}
+	
+	#downloadContainer	{
+		background-color: #f9f9f9;
+	}
+	
+	/* Sticky */
+	#categoryHeader	{
+		position:-webkit-sticky;
+		position:-moz-sticky;
+		position: sticky;
+		top:0;
+		height:2em;
+		background-color: transparent;
+		color:#626262;
+		z-index: 999;
+	}
+	
+	#categoryName	{
+		font-family: 'Source Sans Pro';
+		font-weight: 400;
+		text-align: center;
+		font-size: 1.5em;
+		line-height: 1.25em;
+		float:left;
+		margin-left: 0.5em;
+		color: #f9f9f9;
+	}
+	
+	#itemContainer	{
+		width:90%;
+		padding-top: 3em;
+	}
+	
+	#itemImageContainer	{
+		width:100%;
+		height:8em;
+	}
+	
+	#itemImage	{
+		width:8em;
+		height:8em;
+		float:left;
+		margin-top: 0em;
+		margin-left: 0em;
+	}
+	
+	#itemImage img	{
+		width:100%;
+		height:100%;
+		-webkit-filter: saturate(0%);
+		filter: saturate(0%);
+		position: relative;
+	}
+	
+	#itemTitle	{
+		font-family: 'Source Sans Pro';
+		color:#626262;
+		font-size: 1.5em;
+		margin-top: 0.5em;
+		font-weight: 400;
+	}
+	
+	#itemSubtitle	{
+		font-family: 'Source Sans Pro';
+		color:#626262;
+		font-size: 1.25em;	
+		margin-bottom: 0.25em;
+		font-weight: 400;
+	}
+	
+	#itemSize	{
+		font-family: 'Source Sans Pro';
+		color:#626262;
+		font-size: 1em;	
+		font-weight: 900;
+		margin-bottom: 1em;
+		background-color: #f9f9f9;
+		border: 0.1em solid #818181;
+		width: intrinsic;
+		width: -moz-min-content;
+		margin-left: 0;
+		padding-left: 0.3em;
+		padding-right: 0.3em;
+		padding-bottom: 0.15em;
+		border-radius: 0.1em;
+		color: #818181;
+	}
+	
+	.gb	{
+		font-size: 0.75em;
+		font-weight:600;
+	}
+	
+	#itemDescription	{
+		font-family: 'Source Sans Pro';
+		color:#626262;
+		font-size: 1em;		
+		margin-bottom: 1.5em;
+	}
+	
+	#downloadButtonContainer	{
+		width:100%;
+		height:3em;
+		margin-top: 1.5em;
+		border-radius:0.1em;
+	}
+	
+	#downloadButton	{
+		font-family: 'Montserrat';
+		font-weight: 500;
+		color:#505050;
+		font-size: 1.5em;	
+		text-align: center;
+		line-height: 2em;
+		color: #626262;
+	}
+	
+	.downloadVia	{
+		text-align: center;
+		font-family: 'Source Sans Pro';
+		line-height: 1.5em;
+		color: #626262;
+	}
+	
+	.jatsby	{
+		font-family: 'Lobster';
+	}		
+	
+	.link	{
+		text-decoration: underline;
+	}
+	
+	#footer	{
+		background-color: #f9f9f9;
+	}
+	
+	#footerText	{
+		line-height: 1em;
+		font-family: 'Lobster';
+		text-align: center;
+		font-size: 1.75em;
+		color:#626262;
+		padding-bottom: 0.75em;
+		padding-top: 0.25em;	
+	}
+	
+}

@@ -1,0 +1,36 @@
+Jatsby Framework v0.4
+0.3 -> 0.4 Changelog
+October 25, 2014 - October 29, 2014
+
+- Added "Fonts" and "Reset" sections to template's mobile.css
+- Added "-wekbit-font-size-adjust: 100%;" to Reset section to prevent
+  browsers from adjusting the font size when orientation changes
+- Added @media to Desktop breakpoint to allow for quick testing of :hover 
+  effects in split windows (which are inevitably less than 1201px on many screen sizes)
+- Renamed "Meta" section in template's index.html to "Meta / SEO" for clarity
+- Corrected spelling error ("breakpoint" in CSS files)
+
+
+Proposed (didn't quite make it into v0.4, but on the books for a future release)
+
+- Added some modules
+	- headers
+	- footers
+	- graphs
+	- buttons
+	
+- Search Engine Optimization
+	- Better than it is with the HTML Meta tags, if possible
+	
+I think it would be best to have one HTML and CSS file pair for ALL of the modules of the framework.
+Like a catalog, which should be much easier than having to find and open buttons.html and buttons.css, then
+moving on to the next pair, like headers.html and headers.css, etc.
+
+The idea is that the Jatsby Framework is made up of two parts
+	- The template (which people will use for the code of their webpages)
+	- The catalog (where all of the premade code is stored)
+	
+	The idea is that people copypasta from the catalog things they want, into the template.
+	
+	Keep lato.css separate, so all 100-900 weights are available to try out when making the webpage. When the page is finished,
+	the @import for lato.css can be replaced with direct code (@font-face) from the CSS file.

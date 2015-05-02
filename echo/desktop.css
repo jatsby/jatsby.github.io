@@ -1,0 +1,190 @@
+/* Desktop CSS
+   Jatsby Framework v0.4
+   Released October 30, 2014 under the MIT License
+   Copyright 2014 Jatsby 
+*/
+
+
+/*===== Tablet Landscape Breakpoint =====*/
+/* 900px- 1200px						 */
+/* For tablets in landscape	 			 */		
+/* iPad, Nexus 7, Nexus 10, Surface Pro	 */	
+/*=======================================*/
+
+@media (min-width: 900px)	{
+	
+	#header	{
+		height:6em;
+	}
+	
+	#infoContainer	{
+		max-width:50em;
+	}
+	
+ 	#name	{
+ 		font-size: 7em;
+	}
+	
+	#info	{
+		margin-top: 3em;
+		font-size: 1.25em;
+	}
+	
+	.allDownloadsStickyHeader	{
+		height: 3.5em;
+	}
+	
+	#downloadContainer	{
+		max-width:50em;
+	}
+	
+	/* Sticky */
+	#categoryHeader	{
+		height:3.5em;
+	}
+	
+	#categoryName	{
+		font-size: 2em;
+		font-weight: 400;
+		font-size: 2.5em;
+		line-height: 1.25em;
+	}
+	
+	#echoContainer	{
+		height:3.5em;
+	}
+	
+	/* Sticky */
+	#echo	{
+		line-height: 1.1em;
+	}
+	
+	#contentContainer	{
+		height:auto;
+	}
+	
+	/* fixes height discrepency between m+t and d */
+	.two	{
+		height:5em;
+	}
+	
+	#itemImageContainer	{
+		margin-top: 4em;
+	}
+	
+	#itemImage	{
+		width:10em;
+		height:10em;
+	}
+	
+	#itemTitle	{
+		font-size: 2em;
+	}
+	
+	#itemSubtitle	{
+		font-size: 1.5em;	
+	}
+	
+	#itemSize	{
+		font-size: 1.25em;	
+	}
+
+	#itemDescription	{	
+		margin-top: 1.5em;
+		max-width: 35em;
+		margin-left: 0;
+	}
+	
+	#downloadButtonContainer	{
+		width:15em;
+		height:3.5em;
+		margin-top: 2em;
+		margin-left: 0em;
+		padding-left: 0;
+		border-radius: 0.1em;
+	}
+	
+	#downloadButton	{
+		font-size: 1.75em;	
+		-webkit-transition-duration:0.25s;
+		-moz-transition-duration: 0.25s;
+		padding-left: 0;
+	}
+	
+	.downloadVia	{
+		text-align: left;
+		font-family: 'Source Sans Pro';
+		margin-top: 0.5em;
+		font-size: 1.25em;
+		margin-left: 0;
+		width: intrinsic;
+		width: 12em;
+		text-align: center;
+	}
+	
+	.operatingSystems	{
+		height:130em;
+	}
+	
+	.hackintoshing	{
+		height:60em;
+	}
+	
+	#footer	{
+
+	}
+	
+	#footerText	{
+
+	}
+	
+	#footerLine	{
+		position:absolute;
+		width: 93.33%;
+		margin-left: 3.33%;
+		height:0.2em;
+		margin-top: 4.25em;
+		z-index: 1;
+		border-radius: 999em;
+		background-color: #45edbb;
+		background-color: #b1b1b1;
+		visibility: hidden;
+		visibility: visible;
+	}
+	
+}
+
+
+/*========== Desktop Breakpoint =========*/
+/* 1201px+								 */
+/* For full-size computers				 */
+/* MacBook Pro, iMac					 */
+/*=======================================*/
+
+/* Switch from 1201px to 0px for testing
+	or to "disable" Desktop breakpoint */	
+/*@media (min-width: 0px)*/
+@media (min-width: 999901px)	{
+	
+	#downloadButton {
+		background-color: #f9f9f9;
+		border: 0.075em solid #6ADDBE;	
+		border-radius: 0.1em;	
+		color: #6ADDBE;
+	}
+	
+	#downloadButton:hover	{
+		background-color: #6ADDBE;
+		border-radius:0.1em;
+		color: #626262;
+		-webkit-transition-duration:0.25s;
+		-moz-transition-duration: 0.25s;
+	}
+
+}
+
+
+
+
+
+

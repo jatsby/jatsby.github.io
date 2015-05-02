@@ -1,0 +1,125 @@
+/** * Jatsby Framework ("mobile.css")
+	* June 24,2014 
+	* Copyright 2014 Jatsby, Inc. All Rights Reserved *  **/
+
+	
+@charset "UTF-8";
+
+/* Lobster 400; normal */
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+/* Lato 100-900; normal, italic */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+*	{
+	padding:0;
+	margin:0;
+	-webkit-font-smoothing:subpixel-antialiased;
+	font-smooth:always;
+}
+
+a	{
+	text-decoration: none;
+	color:inherit;
+}
+
+.roboto	{
+	font-family: 'Roboto';
+}
+
+
+@media (min-width: 240px)	{
+
+html	{
+   	background-color: #fcfcfc;
+}
+
+#header	{
+	height:0;
+	z-index: 999;
+	/* White With 5% Transparency */
+	background-color: rgba(255,255,255,0.95);
+	border-bottom: 0em solid #60bbd1;
+	visibility: hidden;
+}
+
+#jatsby	{
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: -0em;
+	font-family: 'Lobster';
+	line-height: 1.1em;
+	color:#60bbd1;
+}
+
+#email	{
+	visibility: hidden;
+	height:0;
+}
+
+#articleContainer	{
+	margin-top:2em;
+	margin-bottom: 2em;
+	/* Where fonts are defined for everything after the Header */
+	font-family: 'Lato';
+}
+ 
+#dateContainer	{
+}
+
+#date	{
+	text-align: center;
+   	background-color:#fdfdfd;
+	color:#60bbd1;
+	font-weight: 200;
+	font-size: 1.25em;
+	width:intrinsic;
+  	border:0.075em dotted #60BBD1;
+  	border-radius: 0.1em;
+  	margin:0 auto;
+  	padding-left: 0.25em;
+	padding-right: 0.25em;
+}
+
+#article	{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+#articleFrame	{
+	width:90%;
+	margin:0 auto;
+}
+
+#title	{
+	font-size: 1.5em;
+	font-weight: 400;
+	color:#7c7c7c;
+	text-align: center;
+}
+
+#subtitle	{
+	font-size: 1.15em;	
+	font-weight: 400;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	color:#7c7c7c;
+	text-align: center;
+	visibility: hidden;
+	height:0;
+}}
+
+#content	{
+	padding-top:1em;
+	font-size: 1em;
+	text-align:justify;
+	color:#7c7c7c;
+	font-weight: 400;
+}
+
+#footer	{
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+
+}

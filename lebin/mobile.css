@@ -1,0 +1,437 @@
+/* Mobile CSS
+   Jatsby Framework v0.4.1
+   Originally Released October 22, 2014 
+    under the MIT License
+   Updated November 13, 2014
+   Copyright 2014 Jatsby 
+*/
+
+/*================ Fonts ================*/
+/* Declare or import all fonts here		 */
+/*=======================================*/
+
+@charset "UTF-8";
+
+/* Lobster 400; normal */
+@import url("http://fonts.googleapis.com/css?family=Lobster");
+
+/* Lato 100-900; normal, italic */
+/*@import url("http://jatsby.com/lato.css");*/
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+
+/*=============== Reset =================*/
+/* Simple reset parameters				 */
+/* Also for custom global declarations	 */
+/* (ie, ".roboto" for 					 */
+/* font-family:Roboto;					 */
+/*=======================================*/
+
+*	{
+	padding:0;
+	margin:0 auto;
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust: 100%;
+	/* a */
+	text-decoration: none;
+	color:inherit;
+}
+
+html	{
+	background-color: #f8f8f8;
+	min-width: 900px;
+}
+
+
+/*========== Mobile Breakpoint ==========*/
+/* 300px- 599px							 */
+/* For small devices					 */
+/* iPhone, iPod Touch, Nexus 5			 */
+/*=======================================*/
+
+@media (min-width: 300px)	{
+	
+	#everythingContainer	{
+		background-color: white;
+		width:100%;
+	}
+
+	#header	{
+		background-color: rgba(248, 248, 248, 0.95);
+		position:fixed;
+		top:0;
+		width:100%;
+		z-index: 999;
+	}
+	
+	#lebinButton	{
+		font-family: 'Lato';
+		margin-left: 5%;
+		color:rgba(95, 95, 95, 1);
+		width:100%;
+	}
+	
+	.lebin	{
+		font-size: 3em;
+		font-weight: 300;
+	}
+	
+	.os	{
+		font-size: 4em;
+		letter-spacing: -0.075em;
+		font-weight: 300;
+	}
+	
+	#osContainer	{
+		width:90%;
+		max-width: 52em;
+		padding-top: 12em;
+		padding-bottom: 10em;
+	}
+	
+	#introContainer	{
+		width:100%;
+		margin-bottom: 10em;
+		font-family: 'Lato';
+		color:#505050;
+	}
+	
+	#introTitle	{
+		font-size: 3em;
+		margin-bottom: 0.5em;
+	}
+	
+	#introDesc	{
+		font-size: 2em;
+		color:#707070;
+	}
+	
+	#osWindow	{
+		margin-top:5em;
+		background-color: #D2D2D2;
+		height:30em;
+		border-radius:0.2em;
+		margin-bottom: 10em;
+	}
+	
+	#osBar	{
+		background-color: #686868;
+		height:3em;
+		border-top-left-radius: 0.2em;
+		border-top-right-radius: 0.2em;
+	}
+	
+	#buttonContainer	{
+		position: absolute;
+		width:intrinsic;
+		font-family: 'Lato';
+		margin-top: 0.6em;
+		margin-left: 1em;
+	}
+	
+	#buttonRed	{
+		float:left;
+		width:intrinsic;
+		padding: 0.1em;
+		padding-left: 0.35em;
+		padding-right: 0.35em;
+		text-align: center;
+		font-size: 1.25em;
+		border-radius: 999em;
+		background-color: #FFBD93;
+		font-weight: 900;
+		color:#FFBD93;
+		margin-right: 0.25em;
+	}
+	
+	#buttonYellow	{
+		float:left;
+		width:intrinsic;
+		padding: 0em;
+		padding-left: 0.1em;
+		padding-right: 0.1em;
+		padding-bottom: 0.13em;
+		text-align: center;
+		font-size: 3em;
+		border-radius: 999em;
+		background-color: #FFEA93;
+		font-weight: 500;
+		color:#FFEA93;
+		line-height: 0.45em;		
+		margin-right: 0.1em;
+	}
+	
+	#buttonGreen	{
+		float:left;
+		width:intrinsic;
+		padding: 0em;
+		padding-left: 0.1em;
+		padding-right: 0.1em;
+		padding-top: 0.1em;
+		padding-bottom: 0.21em;
+		text-align: center;
+		font-size: 2.25em;
+		border-radius: 999em;
+		background-color: #CAFD98;
+		font-weight: 700;
+		color:#CAFD98;
+		line-height: 0.45em;
+	}
+	
+	#buttonRed,
+	#buttonYellow,
+	#buttonGreen	{
+		-webkit-transition-duration:0.25s;
+	}
+	
+	#buttonContainer:hover>#buttonRed	{
+		color:#E46D5C;
+	}
+
+	#buttonContainer:hover>#buttonYellow	{
+		color:#D5C13E;
+	}
+	
+	#buttonContainer:hover>#buttonGreen	{
+		color:#9CD53E;
+	}
+	
+	#barTitle	{
+		text-align: right;
+		margin-right: 1em;
+		font-size: 2em;
+		font-family: 'Lato';
+		line-height: 1.4em;
+		color:#c1c1c1;
+		font-weight: 400;
+	}
+
+	#contentContainer	{
+		margin-top: 8em;
+	}
+	
+	#content	{
+		width:30%;
+	}
+	
+	#box	{
+		font-family: 'Lato';
+		background-color: #c1c1c1;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		border-radius: 0.0em;
+		margin-bottom: 2em;
+	}
+	
+	#boxText	{
+		margin-left: -6em;
+		color:#606060;
+		font-size: 1.25em;
+		font-weight: 600;
+	}
+	
+	#infoContainer	{
+		margin-bottom: 5em;
+	}
+	
+	#infoTitle	{
+		font-family: 'Lato';
+		font-size: 3em;
+		font-weight: 400;
+		color:#505050;
+		margin-top: 1em;
+	}
+	
+	#infoDesc	{
+		font-family: 'Lato';
+		margin-top: 1em;
+		font-size: 1.25em;
+		width:80%;
+		margin-left: 0;
+		color:#505050;
+	}
+	
+	/* Muse */
+	
+	#nowPlayingContainer	{
+		width:100%;
+		background-color: #000000;
+		height:7em;
+	}
+	
+	#nowPlaying	{
+		width:18em;
+		font-family: 'Lato';
+	}
+	
+	#title	{
+		font-size: 1.25em;
+		padding-top: 0.5em;
+		margin-bottom: 0.25em;
+		color:#B87391;
+		font-weight: 600;
+	}
+	
+	#artist	{
+		color:#B87391;
+		margin-bottom: 0.25em;
+		font-weight: 300;
+	}
+	
+	#album	{
+		color:#B87391;
+		margin-bottom: 0.5em;
+		font-style: italic;
+	}
+	
+	#art	{
+		width:6em;
+		height:6em;
+		position: absolute;
+		margin-top:-5.5em;
+		margin-left: 12em;
+	}
+	
+	#art img	{
+		width:100%;
+		height:100%;
+	}
+	
+	#timeContainer	{
+		background-color: black;
+		margin-top: 1.5em;
+		font-family: 'Lato';
+		text-align: center;
+		padding-bottom: 0.25em;
+	}
+	
+	#timeFiller	{
+		background-color: #B87391;
+		width:15%;
+		height:1.45em;
+		float:left;
+		position: absolute;
+	}
+		
+	#time	{
+		color:#B87391;
+	}
+	
+	#songTableContainer	{
+		margin-top: 1em;
+	}
+	
+	#songTable	{	
+		font-family: 'Lato';
+		font-size: 1.25em;
+		height:2em;
+		width:99.5%;
+		line-height: 2em;
+		color:#303030;
+	}
+	
+	#tableTitle	{
+		float:left;
+		margin-left: 2em;
+		position:relative;
+		width:30%;
+	}
+	
+	#tableArtist	{
+		float:left;
+		margin-left: 0%;
+		width:30%;
+		position:relative;
+	}
+	
+	#tableAlbum	{
+		float:left;
+		margin-left: 0%;
+		position:relative;		
+	}
+	
+	.light	{
+		background-color: #f2f2f2;
+	}
+	
+	.lighter	{
+		background-color: white;
+	}
+	
+	/* Maps */
+	
+	#mapsContainer	img {
+		width:100%;
+	}
+	
+	/* MetaBrowser */
+	
+	#metaBrowserContainer	{
+
+	}
+	
+	/* Settings */
+	
+	#lines	{
+		border-left:0.1em solid #ececec;
+		border-right:0.1em solid #ececec;
+		height:10em;
+		margin-top: -9em;
+	}
+	
+	#settingsWindow	{
+		width:100%;
+		height:10em;
+		margin-top: 1em;
+		padding-top: 1em;
+		background-color: #CAFD98;
+		border-bottom-left-radius: 0.2em;
+		border-bottom-right-radius: 0.2em;
+	}
+	
+	.settings	{
+		font-weight: 600;
+	}
+	
+	#addressBar	{
+		width:80%;
+		font-family: 'Lato';
+		font-size: 1.75em;
+		padding: 0.2em;
+		color:#505050;
+		border-radius:0.1em;
+		background-color:white;
+	}
+	
+	#browserButtonContainer	{
+		margin:0 auto;
+		width:intrinsic;
+	}
+	
+	#browserButton	{
+		float:left;
+		margin-right: 2em;
+		font-family: 'Lato';
+		background-color:white;
+		padding: 0.2em;
+		padding-left: 1em;
+		padding-right: 1em;
+		font-size: 1.5em;
+		margin-top: 2em;
+		border-radius:0.2em;
+		color:#505050;
+	}
+	
+	/* Footer */
+	
+	#footer	{
+		font-family: 'Lobster';
+		font-size: 3em;
+		text-align: center;
+		height:2em;
+		line-height: 2em;
+		color:#6e6e6e;
+		background-color: #f8f8f8;
+	}
+	
+}

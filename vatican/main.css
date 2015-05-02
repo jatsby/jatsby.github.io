@@ -1,0 +1,398 @@
+/* 
+   Jatsby Framework v1.2.5
+   Released October 22, 2014 
+    under the MIT License
+   Updated March 25, 2015
+   Copyright 2015 Jatsby 
+   https://jatsby.com/
+*/
+
+
+
+/*==================================*/
+/*             Imports              */
+/*==================================*/
+/* Import fonts, CSS files here     */
+/*==================================*/
+
+@charset "UTF-8";
+
+/* Aileron 100-900; normal, italic */
+@import url("fonts/aileron.css");
+
+/* Bebas Neue 100, 200, 300, 400, 600; normal */
+@import url("fonts/bebasNeue.css");
+
+/* Lobster 400; normal */
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+/* Lato 100, 300, 400, 700, 900; normal, italic */
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic");
+
+/* Mohave 400, 600, 700; normal, italic */
+@import url("fonts/mohave.css");
+
+/* Montserrat 400, 700; normal */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/* Simplifica 400; normal */
+@import url("fonts/simplifica.css");
+
+/* Source Sans Pro 200-400, 600, 700, 900; normal, italic */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic");
+
+
+/*==================================*/
+/*              Reset               */
+/*==================================*/
+/* Simple reset parameters          */
+/* Also for custom global           */
+/*  declarations                    */
+/* (ie, ".roboto" for               */
+/*  font-family:Roboto;)            */
+/*==================================*/
+
+*	{
+	padding:0;
+	margin:0 auto;
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust: 100%;
+	text-rendering: geometricPrecision;
+	text-decoration: none;
+	color:inherit;
+	line-height: normal;
+	/* Responsive Transition Effects */
+	-webkit-transition-duration:0.5s;
+	-webkit-transform: rotate3d(0,0,0);
+	-moz-transition-duration: 0.5s;
+	-moz-transform: rotate3d(0,0,0);
+}
+
+html	{
+	background-color: #373737;	
+}
+
+/*==================================*/
+/*          320 Breakpoint          */
+/*==================================*/
+/* 320px- 599px                     */
+/* For small devices                */
+/* iPhone, iPod Touch, Nexus 5      */
+/*==================================*/
+@media (min-width: 320px)           {
+/*==================================*/
+
+		
+.header	{
+	width: 80%;
+	margin-top: 5em;
+}
+
+.header-title	{
+	font-size: 4em;
+	text-align: left;
+	line-height: 1em;
+	font-family: 'Lato';
+	color: #eb6157;
+	font-weight: 300;
+}
+
+.header-subtitle	{
+	color: #f9f9f9;
+	font-family: 'Montserrat';
+	font-size: 1.2em;
+	font-weight: 300;
+	margin-left: 1.3em;
+	letter-spacing: 0.05em;
+	transform: translateZ(-1px);
+  transform: translateZ(-1px) scale(2);
+  margin: 0;
+  text-align: center;
+  z-index: 999;
+  position: relative;
+  font-size: 2.2em;
+  margin-top: 4em;
+}
+
+.introParagraph	{
+	width: 76%;
+	margin-top: 4em;
+	font-size: 1.2em;
+	color: #f9f9f9;
+	font-family: 'Montserrat';
+	text-align: justify;
+	font-weight: 300;
+	transform: translateZ(0);
+	margin-bottom: 30em;
+}
+
+/* WiFi Icon */
+
+.wifiContainer	{
+	margin-top: 0.0em;
+	background-color: #E9625B;
+}
+
+    .wifi   {
+       width:30em;
+       height:30em;
+       background-color: red; 
+       text-align: center;
+       position: relative;
+       -webkit-transform:rotate(-135deg);
+       background-color:#373737;
+       background-color: #e9625b;
+    }
+    
+    .circle1    {
+       width:8em;
+       height:8em;
+       background-color: #373737;
+       border-radius: 999em; 
+       position: relative;
+       border:1em solid #eb6157;
+       z-index: 9;
+       text-align: center;
+       position: absolute;
+       text-align: center;
+       display: block;
+       margin-top: 33.3%;
+       margin-left: 33.3%;
+       border:1em solid #EB955C;
+       border:1em solid #373737;
+}
+
+    .circle2    {
+        width:16em;
+       height:16em;
+       background-color: #373737;
+       border-radius: 999em; 
+       position: relative;
+       border:1em solid #eb6157; 
+       border:1em solid #373737; 
+       z-index: 8;  
+       text-align: center;  
+       position: absolute;
+       margin-top: 20%;
+       margin-left: 20%;
+    }
+    
+    .circle3    {
+        width:26.5em;
+        height:26.5em;
+       background-color: #373737;
+       background-color: #eb6157;
+       border-radius: 999em; 
+       position: relative;
+       border:1em solid #eb6157; 
+       border:1em solid #373737; 
+       z-index: 7; 
+       position: absolute;   
+       text-align: center;
+       margin-left: 0.1%;
+       margin-top: 0.1%;
+    }
+    
+    .wifiColor  {
+        background-color: #ababab;
+        border:1em solid #373737;
+        background-color: #eb6157;
+       background-color: #373737;
+        border:1em solid #eb6157;
+    }
+    
+    .rec1   {
+       width:15em;
+       height:30em;
+       background-color: black;
+       z-index: 9;
+       position: relative;
+       margin-left: 0; 
+       float:left;
+       background-color: #373737;
+       border:0.0em solid #373737;
+       background-color: #E9625B;
+       border:0.02em solid #E9625B;
+    }
+    
+    .rec2   {
+       width:15em;
+       height:15em;
+       background-color: white; 
+       position: relative;
+       z-index: 9;
+       margin-right: 0;
+       background-color: #373737;
+       border:0.01em solid #373737;
+       background-color: #E9625B;
+       border:0.01em solid #E9625B;
+    }
+    
+.wifiLabel	{
+	font-size: 4em;
+	text-align: center;
+	line-height: 1em;
+	font-family: 'Lato';
+	color: #eb6157;
+	font-weight: 300;	
+	z-index: 999;
+	position: absolute;
+	margin-top: -3em;
+	width: 100%;
+	color: #eeeeee;
+}
+
+
+/* Godspeed */
+
+.godspeedContainer	{
+	width: 100%;
+}
+
+.godspeedTitle	{
+	color: #f9f9f9;
+	font-family: 'Montserrat';
+	font-size: 1.2em;
+	font-weight: 300;
+	margin-left: 1.3em;
+	letter-spacing: 0.05em;
+	transform: translateZ(-1px);
+  transform: translateZ(-1px) scale(2);
+  margin: 0;
+  text-align: center;
+  z-index: 999;
+  position: relative;
+  font-size: 2.2em;
+  margin-bottom: 3em;
+}
+    
+    .graph1container    {
+        
+    }
+    
+    .graphLabel {
+        float:left;
+        display: inline;
+        position: relative;
+        font-family: 'Lato';
+        color:#eeeeee;
+        font-size: 1.25em;
+        text-align: right;
+        margin-bottom: -2em;
+        margin-left: 1em;
+    }
+    
+    .graph1 {
+    margin-top: 1em;
+       width:88%;
+       background-color: #E9625B;
+       height:1.5em; 
+       display: inline-block;
+       font-family: 'Lato';
+       font-size: 1.5em;
+       line-height: 1.5em;
+       text-align: right;
+       padding-right: 2%;
+       color:#eeeeee;
+    }
+    
+    .graph2 {
+    margin-top: 1em;
+       width:50%;
+       background-color: #f9f9f9;
+       height:1.5em; 
+       display: inline-block;
+       font-family: 'Lato';
+       font-size: 1.5em;
+       line-height: 1.5em;
+       text-align: right;
+       padding-right: 2%;
+       color:#373737;
+    }
+    
+    .graph3 {
+    margin-top: 1em;
+       width:30%;
+       background-color: #f9f9f9;
+       height:1.5em; 
+       display: inline-block;
+       font-family: 'Lato';
+       font-size: 1.5em;
+       line-height: 1.5em;
+       text-align: right;
+       padding-right: 2%;
+       color:#373737;
+    }
+    
+    .graph1, .graph2, .graph3	{
+	    margin-bottom: 1em;
+	    font-size: 2.5em;
+    }
+    
+    .graph2, .graph3	{
+	    background-color: #808080;
+	    color: #eeeeee;
+    }
+    
+    .short  {
+        
+    }
+
+
+
+
+
+/* Footer */
+
+.footer	{
+	text-align: center;
+	color: #eeeeee;
+	margin-bottom: 2em;
+	font-size: 1.25em;
+	font-family: 'Montserrat';
+	margin-top: 20em;
+}
+
+.jatsby	{
+	font-family: 'Lobster';
+	font-size: 1.1em;
+	color: #f9f9f9;
+	color: #E9625B;
+}
+
+
+}/*=================================*/
+/*          600 Breakpoint          */
+/*==================================*/
+/* 600px- 899px                     */
+/* For tablets in portrait          */
+/* iPad, Nexus 7, Nexus 10          */
+/*==================================*/
+@media (min-width: 600px)           {	
+/*==================================*/
+
+
+
+}/*=================================*/
+/*          900 Breakpoint          */
+/*==================================*/
+/* 900px- 1024px                    */
+/* For tablets in landscape         */
+/* iPad, Nexus 7+10, Surface Pro    */
+/*==================================*/
+@media (min-width: 900px)           {
+/*==================================*/
+
+
+
+}/*=================================*/
+/*         1025 Breakpoint          */
+/*==================================*/
+/* 1025px+                          */
+/* For full-size computers          */
+/* MacBook Pro, iMac, 2015 MacBook  */
+/*==================================*/
+@media (min-width: 1025px)          {
+/*==================================*/
+
+

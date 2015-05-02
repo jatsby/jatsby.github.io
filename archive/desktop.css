@@ -1,0 +1,98 @@
+/** * Jatsby Framework ("desktop.css")
+	* June 24,2014 
+	* Copyright 2014 Jatsby, Inc. All Rights Reserved */ 
+	
+
+@media (min-width: 960px)	{
+
+#header	{
+	width:100%;
+	position: fixed;
+	top:0;
+	padding-top: 0;
+	height:4em;
+	background-color: rgba(255,255,255,0.95);
+	border-bottom: 0.075em solid #60BBD1;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+}
+
+#header:active	{
+	background-color:#60BBD1;
+	-webkit-transition-duration: 0.1s;
+	-moz-transition-duration: 0.1s;
+}
+
+#jatsby	{
+	font-size: 3.25em;
+}
+
+#email	{
+	position: fixed;
+	margin-top: -3.2em;
+	z-index: 999;
+	padding:0.1em;
+	border:0.05em solid #60bbd1;
+	right:5%;
+	border-top: 0;
+	font-size: 1.25em;
+	font-family: 'Lato';
+	font-weight: 500;
+	background-color: rgba(255,255,255,0.95);
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-top:0.05em dashed #60BBD1;
+	color:#60BBD1;
+	border-bottom-left-radius: 0.1em;
+	border-bottom-right-radius: 0.1em;
+	-webkit-transition-duration: 0.2s;
+	visibility: visible;
+	height:auto;
+}
+
+#articleContainer	{
+	margin-top:8em;
+	padding-bottom: 4em;
+}
+
+#dateContainer	{
+	max-width: 50em;
+	margin:0 auto;
+}
+
+#date	{
+	float: left;
+	font-size: 1.75em;
+}
+
+#article	{
+	max-width:50em;
+	margin:0 auto;
+	margin-top:5em;
+	margin-bottom: 3em;
+}
+
+#title	{
+	font-size: 2.25em;
+	font-weight: 400;
+}
+
+#subtitle	{
+	font-weight: 400;
+}
+
+#content	{
+	padding-top:2em;
+	font-size: 1.1em;
+}
+
+}
+
+
+
+
+
+
+
+
+

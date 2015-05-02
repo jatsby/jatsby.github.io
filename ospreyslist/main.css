@@ -1,0 +1,1015 @@
+/* 
+   Jatsby Framework v1.2.5
+   Released October 22, 2014 
+    under the MIT License
+   Updated March 25, 2015
+   Copyright 2015 Jatsby 
+   https://jatsby.com/
+*/
+
+
+
+/*==================================*/
+/*             Imports              */
+/*==================================*/
+/* Import fonts, CSS files here     */
+/*==================================*/
+
+@charset "UTF-8";
+
+/* Bebas Neue 100, 200, 300, 400, 600; normal */
+@import url("fonts/bebasNeue.css");
+
+/* Lato 100, 300, 400, 700, 900; normal, italic */
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic");
+
+/* Bangers */
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+
+
+/*==================================*/
+/*              Reset               */
+/*==================================*/
+/* Simple reset parameters          */
+/* Also for custom global           */
+/*  declarations                    */
+/* (ie, ".roboto" for               */
+/*  font-family: Roboto;)           */
+/*==================================*/
+
+*	{
+	padding:0;
+	margin:0 auto;
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust: 100%;
+	text-rendering: geometricPrecision;
+	text-decoration: none;
+	color:inherit;
+	line-height: normal;
+	/* Responsive Transition Effects */
+	-webkit-transition-duration:0.1s;
+	-webkit-transform: rotate3d(0,0,0);
+	-moz-transition-duration: 0.5s;
+	-moz-transform: rotate3d(0,0,0);
+}
+
+html	{	
+	background-color: #2f2f2f;
+	background-color: #f9f9f9;
+}
+
+
+/* Added specifically for OspreysList*/
+/* (Resolves issue where Safari reformats form buttons) */
+input	{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+/* Quick Spacing */
+
+.space1	{
+	width: 100%;
+	height: 1em;
+}
+
+.space2	{
+	width: 100%;
+	height: 2em;	
+}
+
+
+/*==================================*/
+/*          320 Breakpoint          */
+/*==================================*/
+/* 320px- 599px                     */
+/* For small devices                */
+/* iPhone, iPod Touch, Nexus 5      */
+/*==================================*/
+@media (min-width: 320px)           {
+/*==================================*/		
+
+/* Alphabetized by element category:
+	- About
+	- Buttons
+	- Cells
+	- Footer
+	- Forms
+	- Header
+	- Listing
+	- Profile
+	- SearchBar
+*/
+
+
+/********************************
+    About 320
+    index.html, faqs.html
+********************************/
+
+.about	{
+	width: 100%;
+}
+
+.about-heading, .about-title,
+.about-subtitle, .about-description	{
+	text-align: center;
+	font-family: 'Lato';
+}
+
+.about-heading	{
+	background-color: none;
+}
+
+.about-title	{
+	font-size: 1.75em;
+	line-height: 1.25em;
+	color: #404040;
+	width: 90%;
+}
+
+.about-subtitle	{
+	font-size: 1.25em;
+	font-weight: 300;
+	padding-bottom: 0.3em;
+	width: 90%;
+}
+
+.about-description	{
+	font-size: 1em;
+	text-align: justify;
+	width: 90%;
+	color: #505050;
+}
+
+/* Best for the link to FAQs.html */
+.about-description a	{
+	text-decoration: underline;
+	color: #64C7C5;
+}
+
+
+/********************************
+    Buttons 320
+    listing.html, listings.html, 
+    profile.html, services.html
+********************************/
+
+/*//// listingCell -> cell /////*/
+.cell-button	{
+	float: right;	
+	margin-right: 1%;
+	line-height: 1.8em;
+	width: 4em;
+	text-align: center;
+	font-family: 'Bebas Neue';
+	color: #303030;
+	color: #f9f9f9;
+	height: 90%;
+	margin-top: 0.12em;
+	border-radius: 0.2em;
+}
+
+/* Not a "button" per sé */
+.cell-nullButton	{
+	float: right;	
+	margin-right: 1%;
+	line-height: 2em;
+	width: 4em;
+	text-align: center;
+	font-family: 'Bebas Neue';
+}
+
+/* Color of buttons everywhere */
+.green	{
+	background-color: #6bdec0;	
+}
+
+.red	{
+	background-color: #EB6F6B;	
+}
+
+
+/********************************
+    Cells 320
+    listing.html, listings.html, 
+    profile.html, services.html
+********************************/
+
+.cell	{
+	width: 100%;
+	height: 2em;
+	font-family: 'Lato';
+}
+
+.cell-line	{
+	width: 100%;
+	height: 0.075em;
+	background-color: #696969;
+	margin-bottom: 1em;
+}
+
+.cell-name, .cell-price	{
+	float: left;
+	line-height: 2em;
+}
+
+.cell-name	{
+	margin-left: 5%;
+	width: 50%;
+}
+
+.cell-price	{
+	margin-left: 0%	
+}
+
+/* Profile.html > Listing History */
+.active	{
+	background-color: #d7d7d7;
+	background-color: #f9f9f9;
+	color: #6ADDBE;
+	color: #404040;
+	border-bottom: 0.08em solid #575757;
+	background-color: #93e1b6;
+	background-color: #f9f9f9;
+	background-color: #f1f1f1;
+	border-bottom: 0.2em solid #f9f9f9;
+}
+
+/* Profile.html > Listing History */
+.inactive	{
+	background-color: #f1f1f1;
+	color: #707070;
+	border-bottom: 0.05em solid #939393;
+	background-color: #f1f1f1;
+	border-bottom: 0.2em solid #f9f9f9;
+}
+
+.listingsContainer	{
+	width: 98%;
+}
+
+.listingsTitle	{
+	width: 90%;
+	font-family: 'Bebas Neue';
+	color: #505050;
+	font-size: 1.5em;
+	margin-bottom: 0.3em;
+}
+
+/********************************
+    Forms 320
+    index.html, profile.html
+********************************/
+
+.formContainer	{
+	padding-bottom: 2em;
+	padding-top: 1.25em;
+	margin-top: 0;
+}
+
+.formContainer form	{
+	text-align: center;
+}
+
+.formContainer form input	{
+	font-size: 1.25em;
+	background-color: #e6e6e6;
+	border: 0;
+	width: 90%;
+	height: 1.5em;
+	font-family: 'Lato';
+	text-align: center;
+	border-radius: 0.1em;
+	font-weight: 600;
+	color: #626262;
+}
+
+form .title	{
+	font-family: 'Bebas Neue';
+	color: #505050;
+	text-align: left;
+	width: 90%;
+	line-height: 1.25em;
+	font-size: 1.25em;
+}
+
+form .fileUpload input	{
+	font-family: 'Bebas Neue';
+	background-color: transparent;
+}
+
+form .buttonContainer	{
+	width: 90%;
+}
+
+form .buttonContainer input	{
+	width: 100%;
+	height: 2em;
+	background-color: #bababa;
+	background-color: #60c7c6;
+	text-align: center;
+	line-height: 1.5em;
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	font-size: 1.5em;
+	color: #eeeeee;
+	margin-top: 1em;
+}
+
+
+/********************************
+    Footer 320
+    *.html
+********************************/
+
+.footer	{
+	text-align: center;
+	font-family: 'Bangers';
+	color: #707070;
+	font-size: 1.25em;
+	line-height: 2.5em;
+	padding-top: 0.2em;
+}
+
+
+/********************************
+    Header 320
+    *.html
+********************************/
+
+/* No Sign-in (pos:rel "OspreysList") */
+.header	{
+	text-align: center;
+	color: #eeeeee;
+	font-size: 3.5em;
+	line-height: 1.5em;
+	font-family: 'Bangers';
+	font-weight: 400;
+	background-color: #E9706E;
+	color: #f9f9f9;
+	color: #b75655;
+	background-color: #64C7C5;
+	color: #5c5c5c;
+	background-color: transparent;
+}
+
+/* Sign-In (Shows Profile pos:fixed @ top:0 */
+.profileHeader	{
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	border-bottom: 0.1em solid rgba(56, 56, 56, 0.9);
+	background-color: rgba(56, 56, 56, 0.9);
+	height: 2em;
+}
+
+.profileHeader-profile	{
+	width: 12em;
+	margin: 0 auto;
+}
+
+.profileHeader-pic	{
+	width: 2.5em;
+	height: 2.5em;
+	float: left;
+}
+
+.profileHeader-pic img	{
+	width: 100%;
+	border-radius: 999em;
+	border: 0.1em solid #373737;
+	margin-top: -0.3em;
+}
+
+.profileHeader-name	{
+	font-family: 'Lato';
+	font-size: 1.25em;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin-left: 1em;
+	width: intrinsic;
+	display: inline;
+	color: #f9f9f9;
+}
+
+
+/********************************
+    Listing 320
+    listing.html
+********************************/
+
+.listing-image	{
+	overflow: hidden;
+	height: 15em;
+}
+
+.listing-image-overlay	{
+	width: 100%;
+	height: 15em;
+	z-index: 998;
+	position: absolute;
+	background-color: rgba(83, 83, 83, 0.18);
+}
+
+.listing-image img	{
+	width: 100%;
+	min-height: 10em;
+	overflow: hidden;
+}
+
+.listing-titleContainer	{
+	background-color: #f9f9f9;
+	border-bottom: 0.05em solid black;
+}
+
+.listing-title	{
+	text-align: left;
+	font-family: 'Bebas Neue';
+	line-height: 2em;
+	font-size: 1.5em;
+	color: #4d4d4d;
+	z-index: 998;
+	position: relative;
+	width: 90%;
+	margin-top: 1.3em;
+}
+
+.listing-descriptionContainer	{
+	background-color: #f9f9f9;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-top: 0.0em solid #464646;
+}
+
+.listing-description	{
+	width: 90%;
+	font-family: 'Lato';
+	font-size: 1em;
+	color: #505050;
+}
+
+.listing-price	{
+	font-size: 2em;
+	font-family: 'Lato';
+	text-align: center;
+	padding-top: 0.35em;
+	padding-bottom: 0.35em;
+	background-color: #6FDCBE;
+	color: #4fb79a;
+	border-top: 0.025em solid #4eb799;
+}
+
+.dollar	{
+	font-size: 0.75em;
+}
+
+/* Seller Information Block */
+.listing-authorContainer	{
+	background-color: #ededed;	
+	padding-bottom: 0.5em;
+}
+
+.sellerBlock-title	{
+	visibility: hidden;
+	height: 0;
+}
+
+.listing-author	{
+	width: 15em;
+	margin: 0 auto;	
+}
+
+.listing-author-profilePic	{
+	width: 4em;
+	height: 4em;
+}
+
+.listing-author-profilePic img	{
+	width: 100%;
+	border-radius: 999em;
+	border: 0.1em solid #c0c0c0;
+	margin-top: -1em;
+}
+
+.listing-author-name	{
+	color: #888888;
+	text-align: center;
+	font-family: 'Lato';
+	font-size: 1.25em;
+	padding-bottom: 0.5em;
+	padding-top: 0.25em;
+	border-bottom: 0.1em solid #dfdfdf;
+}
+
+.listing-author-contactInfo	{
+	text-align: center;
+	font-family: 'Lato';
+	font-size: 1.25em;
+	color: #5a5a5a;
+	background-color: #ededed;	
+	line-height: 1.5em;
+	padding-bottom: 0.5em;
+}
+
+
+/********************************
+    Profile
+    profile.html
+********************************/
+
+.profilePic	{
+	padding-top: 2em;
+	width: 100%;
+}
+
+.profilePic img	{
+	border-radius: 999em;
+	width: 60%;
+	display: block;
+	border: 0.0em solid #2d2d2d;
+	opacity: 0.9;
+	-webkit-filter: saturate(80%);
+}
+
+.profileContainer	{
+	border-top: 0.0em solid #e6a87f;
+	padding-top: 1.5em;
+}
+
+.profileName	{
+	text-align: center;
+	font-size: 2em;
+	line-height: 1em;
+	font-family: 'Lato';
+	color: #4f4f4f;
+}
+
+/* Sign Out Button */
+.signOutButtonContainer	{
+	width: intrinsic;	
+}
+
+.signOutButton	{
+	text-align: center;
+	background-color: #ed6e68;
+	width: intrinsic;
+	margin-top: 1em;
+	color: #404040;
+	font-family: 'Bebas Neue';
+	font-size: 1.25em;
+	color: #ed6e68;
+	background-color: transparent;
+	padding: 0.1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-radius: 0.1em;
+	border: 0.075em solid #d1d1d1;
+	line-height: 1em;
+	color: #939393;
+}
+
+.statContainer	{
+	width: 100%;
+	height: 10em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.statLeft	{
+	width: 50%;
+	float: left;
+}
+
+.statRight	{
+	width: 50%;
+	float: right;	
+}
+
+/* "Seller Rating" / "Items Sold" */
+.statLabel	{
+	text-align: center;	
+	font-family: 'Bebas Neue';
+	font-size: 1.25em;
+	color: #505050;
+	border-bottom: 0.1em solid #505050;
+	width: intrinsic;
+}
+
+/* 4.5 */
+.statNumber	{
+	text-align: center;
+	font-size: 5em;
+	margin-top: 0.25em;
+	font-family: 'Bebas Neue';
+	color: #505050;
+}
+
+/* /5 */
+.statNumber-small	{
+	font-size: 0.5em;
+}
+
+
+/********************************
+    SearchBar 320
+    listings.html, profile.html
+********************************/
+
+.searchBar	{
+	height: 2.75em;
+	margin-top: 1em;
+	width: 100%;
+	background-color: none;
+	border-bottom: 0.0em solid #383838;
+	position: relative;
+	z-index: 998;
+}
+
+.searchBox	{
+
+}
+
+.searchBox input	{
+	float: left;
+	width: 95%;
+	height: 1.5em;
+	margin-top: -0.6em;
+	border: 0;
+	font-family: 'Lato';
+	font-size: 1.25em;
+	color: #606060;
+	text-align: center;
+	margin-left: 2.5%;
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	line-height: 1.5em;
+	background-color: transparent;
+	font-family: 'Lato';
+	border-bottom: 0.0em solid #707070;
+	background-color: rgba(230, 230, 230, 0.9);
+	border-radius: 0.15em;
+	color: #878787;
+}
+
+.searchBox input:focus, .searchButton input:focus	{
+	outline: none;
+}
+
+}/*=================================*/
+/*          600 Breakpoint          */
+/*==================================*/
+/* 600px- 899px                     */
+/* For tablets in portrait          */
+/* iPad, Nexus 7, Nexus 10          */
+/*==================================*/
+@media (min-width: 600px)           {	
+/*==================================*/
+
+/* Omitted this because it's not "necessary" 
+	and you probably don't want to deal with 
+	it anyway! */
+
+}/*=================================*/
+/*          900 Breakpoint          */
+/*==================================*/
+/* 900px- 1024px                    */
+/* For tablets in landscape         */
+/* iPad, Nexus 7+10, Surface Pro    */
+/*==================================*/
+@media (min-width: 900px)           {
+/*==================================*/
+
+/********************************
+    About 900
+    index.html, faqs.html
+********************************/
+
+.about	{
+	max-width: 50em;
+}
+
+.about-heading, .about-title,
+.about-subtitle, .about-description	{}
+
+.about-heading	{}
+
+.about-title	{
+	font-size: 2em;
+	line-height: 2em;
+}
+
+.about-subtitle	{}
+
+.about-description	{}
+
+/* Best for the link to FAQs.html */
+.about-description a	{}
+
+
+/********************************
+    Buttons 900
+    listing.html, listings.html, 
+    profile.html, services.html
+********************************/
+
+/*//// listingCell -> cell /////*/
+.cell-button	{}
+
+/* Not a "button" per sé */
+.cell-nullButton	{}
+
+/* Color of buttons everywhere */
+.green	{}
+
+.red	{}
+
+
+/********************************
+    Cells 900
+    listing.html, listings.html, 
+    profile.html, services.html
+********************************/
+
+.cell	{
+	font-size: 1.25em;
+}
+
+.cell-line	{}
+
+.cell-name, .cell-price	{}
+
+.cell-name	{}
+
+.cell-price	{}
+
+/* Profile.html > Listing History */
+.active	{}
+
+/* Profile.html > Listing History */
+.inactive	{}
+
+/*// Consider renaming cellContainer, etc. //*/
+.listingsContainer	{
+	width: 98%;
+}
+
+.listingsTitle	{
+	font-size: 3em;
+	margin-top: 1em;
+}
+
+/********************************
+    Forms 320
+    index.html, profile.html
+********************************/
+
+.formContainer	{
+	max-width: 50em;
+}
+
+.formContainer form	{}
+
+.formContainer form input	{}
+
+form .title	{}
+
+form .fileUpload input	{}
+
+form .buttonContainer	{}
+
+form .buttonContainer input	{}
+
+
+/********************************
+    Footer 900
+    *.html
+********************************/
+
+.footer	{
+	font-size: 1.5em;
+}
+
+
+/********************************
+    Header 900
+    *.html
+********************************/
+
+/* Not Signed-in (pos:rel "OspreysList"/"FAQs") */
+.header	{}
+
+/* Signed-In (Shows Profile pos:fixed @ top:0 */
+.profileHeader	{
+	height: 3.25em;
+}
+
+.profileHeader-profile	{
+	width: 20em;
+}
+
+.profileHeader-pic	{
+	width: 4em;
+	height: 4em;
+}
+
+.profileHeader-pic img	{
+	border: 0.15em solid #373737;
+}
+
+.profileHeader-name	{
+	font-size: 2em;
+}
+
+
+
+/********************************
+    Listing 900
+    listing.html
+********************************/
+
+.listing-image	{
+	height: 35em;
+	margin-top: -5em;
+}
+
+.listing-image-overlay	{
+	height: 40em;
+	margin-top: -5em;
+}
+
+.listing-image img	{
+	min-height: 35em;
+	margin-top: -5em;
+}
+
+.listing-titleContainer	{
+	background-color: rgba(250, 250, 250, 0.5);
+	z-index: 998;
+	position: relative;
+}
+
+.listing-title	{
+	color: #101010;
+	font-size: 2.5em;
+}
+
+.listing-descriptionContainer	{
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.listing-description	{
+	width: 80%;
+	font-size: 1.1em;
+}
+
+.listing-price	{
+	font-size: 2.5em;
+}
+
+.dollar	{}
+
+/* Seller Information Block */
+.listing-authorContainer	{}
+
+.sellerBlock-title	{
+	color: #d8d8d8;
+	font-family: 'Bebas Neue';
+	padding: 0.5em;
+	margin-left: 0.25em;
+	position: absolute;
+	font-size: 1.5em;
+	visibility: visible;
+}
+
+.listing-author	{}
+
+.listing-author-profilePic	{
+	width: 6em;
+	height: 6em;
+}
+
+.listing-author-profilePic img	{}
+
+.listing-author-name	{}
+
+.listing-author-contactInfo	{}
+
+
+/********************************
+    Profile
+    profile.html
+********************************/
+
+.profilePic	{}
+
+.profilePic img	{
+	max-width: 25em;
+}
+
+.profileContainer	{}
+
+.profileName	{
+	font-size: 3em;
+}
+
+/* Sign Out Button */
+.signOutButtonContainer	{}
+
+.signOutButton	{}
+
+.statContainer	{}
+
+.statLeft	{}
+
+.statRight	{}
+
+/* "Seller Rating" / "Items Sold" */
+.statLabel	{
+	font-size: 2em;
+}
+
+/* 4.5 */
+.statNumber	{
+	font-size: 7em;
+	margin-bottom: 1em;
+}
+
+/* /5 */
+.statNumber-small	{}
+
+
+/********************************
+    SearchBar 900
+    listings.html, profile.html
+********************************/
+
+.searchBar	{
+	margin-top: 2em;
+}
+
+.searchBox	{}
+
+.searchBox input	{
+	font-size: 1.5em;
+}
+
+.searchBox input:focus, .searchButton input:focus	{}
+
+}/*=================================*/
+/*         1025 Breakpoint          */
+/*==================================*/
+/* 1025px+                          */
+/* For full-size computers          */
+/* MacBook Pro, iMac, 2015 MacBook  */
+/*==================================*/
+@media (min-width: 1025px)          {
+/*==================================*/
+
+/* Remember, this is only for :hover effects! 
+	Element resizing is done with 900 Breakpoint 
+*/
+
+.cell-button	{
+	background-color: transparent;
+}
+
+	.red	{
+		color: #EB6F6B;	
+	}
+
+	.red:hover	{
+		background-color: #EB6F6B;	
+		color: #f9f9f9;
+	}
+	
+	.green	{
+		color: #6edcbd;	
+	}
+	
+	.green:hover	{
+		background-color: #6FDCBE;	
+		color: #f9f9f9;
+	}
+
+.signOutButton:hover	{
+	color: #EB6F6B;
+	border: 0.075em solid #EB6F6B;
+}
+
+form .buttonContainer input:hover	{
+	background-color: #6ed9d7;
+}
+
+.about-description a:hover	{
+	color: #6ed9d7;
+}
+
+.listing-author-contactInfo a:hover	{
+	text-decoration: underline;
+}
+

@@ -1,0 +1,61 @@
+/** * Jatsby Framework ("tablet.css")
+	* June 24,2014 
+	* Copyright 2014 Jatsby, Inc. All Rights Reserved */ 
+
+	
+@media (min-width: 480px)	{
+
+#header	{
+	padding-top:2em;
+	height:3.5em;
+	color:#60BBD1;
+   	background-color:#fdfdfd;
+	border-bottom: 0.0em solid #60BBD1;
+	position: relative;
+	visibility: visible;
+}
+
+#jatsby	{
+	font-size: 4em;
+}
+
+#articleContainer	{	
+	margin-top:3.5em;
+}
+
+#dateContainer	{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#date	{
+	font-size: 2em;	
+  	border:0.05em dotted #60BBD1;
+  	color:#60bbd1;
+}
+
+#article	{
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;	
+}
+
+#title	{
+	font-size: 2em;
+}
+
+#subtitle	{
+	font-size: 1.5em;
+}
+
+#content	{
+	padding-top:2em;
+	font-size: 1.1em;
+	color:#8a8a8a;
+}
+
+#footer	{
+	visibility: hidden;
+	height:0;
+}
+
+}
